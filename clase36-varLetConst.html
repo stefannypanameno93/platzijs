@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Stefanny = {
+            nombre: 'Stefanny',
+            apellido: 'Panameño',
+            edad: 26
+        }
+
+        function esMayorDeEdad(persona){
+            var mensaje, mensaje2
+            const mayoriaEdad = 18
+
+
+
+            if (persona.edad >= mayoriaEdad){
+                // console.log(`${persona.nombre} tiene ${persona.edad} años, por lo tanto, es mayor de edad`)
+                mensaje = 'Es mayor de edad.'
+            } else {
+                // console.log(`${persona.nombre} tiene ${persona.edad} años, por lo tanto, es menor de edad`)
+                mensaje = 'Es menor de edad.'
+                
+            }
+            console.log(mensaje)
+            console.log(mensaje2)
+        }
+
+        // esMayorDeEdad(Stefanny)
+
+        for  (var i = 0; i < 10; i++) {
+            console.log(i)
+        }
+
+        console.log(`Terminó el for en el número ${i}`)
+    </script>
+</body>
+</html>

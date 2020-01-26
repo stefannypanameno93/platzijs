@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const stefanny = {
+            nombre: 'Stefanny',
+            apellido: 'Panameño',
+        }
+
+        const jessica = {
+            nombre: 'Jessica',
+            apellido: 'Pineda'
+        }
+
+        function saludar(saludo = 'Hola') {
+            console.log(`${saludo}, mi nombre es ${this.nombre}`)
+        }
+
+        // const saludarAStefanny = saludar.bind(stefanny)
+        // const saludarAJessica = saludar.bind(jessica)
+
+        // setTimeout(saludar.bind(stefanny, 'Hola maje'), 1000)
+
+        // saludar.call(stefanny, 'Hola maje') //Esto es para ejecutar inmediatamente el contexto de la función
+
+        saludar.apply(stefanny, ['Hola maje'])
+    </script>
+</body>
+</html>
